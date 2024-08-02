@@ -1,7 +1,9 @@
 php-simple-html-dom-parser
 ==========================
 
-Version 1.5.2
+Version 1.5.3
+
+This project fork from sunra/php-simple-html-dom-parser.
 
 Adaptation for Composer and PSR-0 of:
 
@@ -13,15 +15,14 @@ Extract contents from HTML in a single line.
 
 http://simplehtmldom.sourceforge.net/
 
-
 Install
 -------
 
  composer.phar
 ```json
 "require": {
-    "sunra/php-simple-html-dom-parser": "1.5.2"
-    }
+    "yasiao/php-simple-html-dom-parser": "1.5.*"
+}
 ```
 
 Usage
@@ -31,9 +32,9 @@ Usage
 use Sunra\PhpSimple\HtmlDomParser;
 
 ...
-$dom = HtmlDomParser::str_get_html( $str );
+$dom = HtmlDomParser::str_get_html($str);
 or 
-$dom = HtmlDomParser::file_get_html( $file_name );
+$dom = HtmlDomParser::file_get_html($file_name);
 
 $elems = $dom->find($elem_name);
 ...
